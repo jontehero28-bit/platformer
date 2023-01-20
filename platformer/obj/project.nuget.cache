@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LnB345smkJFoLZP8h8LEnT8KcVgGsOboiUItWGnoS+qYgFNdlLQdAafNOnIuWW+Qz13CPAerF4A3kd6aFQz69A==",
+  "success": true,
+  "projectFilePath": "C:\\programmeringcs\\vinterproject_platformer\\platformer\\platformer\\platformer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yuriy.petrov\\.nuget\\packages\\raylib-cs\\4.2.0.1\\raylib-cs.4.2.0.1.nupkg.sha512",
+    "C:\\Users\\yuriy.petrov\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
