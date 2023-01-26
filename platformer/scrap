@@ -1,0 +1,4 @@
+if (Raylib.CheckCollisionRecs(player, obstacle))
+        {
+            currentScene = "end";
+        }
