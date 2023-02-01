@@ -96,8 +96,15 @@ while(Raylib.WindowShouldClose() == false)
         }
         Obstacles.RemoveAll(o => o.obstacle.x < 0);
         //________________________________________________
-        
-        
+
+        foreach (Obstacle o in Obstacles)
+        {
+            if (Raylib.CheckCollisionRecs(player, o.obstacle))
+            {
+                currentScene = "end";
+            }
+            
+        }
 
     }   
     else if (currentScene == "start")
@@ -113,6 +120,9 @@ while(Raylib.WindowShouldClose() == false)
         if (Raylib.IsKeyPressed(KeyboardKey.KEY_ENTER))
         {
             currentScene = "game";
+            player.x = 50;
+            player.y = 320;
+            
         }
     }
 
@@ -140,8 +150,9 @@ while(Raylib.WindowShouldClose() == false)
     else if (currentScene == "end")
     {
         Raylib.ClearBackground(Color.RED);
-        Raylib.DrawText("GAME OVER", 350, 300, 32, Color.BLACK);
-        Raylib.DrawText("Press ENTER to play again", 300, 400, 32, Color.BLACK);
+        Raylib.DrawText("GAME OVER ", 350, 300, 32, Color.BLACK);
+        Raylib.DrawText("Press ENTER to play again", 300, 100, 32, Color.BLACK);
+        Raylib.DrawText("jag älskar chonnani!", 500, 200, 32, Color.BLACK);
     }
 
     Raylib.EndDrawing();
