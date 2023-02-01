@@ -152,7 +152,6 @@ while(Raylib.WindowShouldClose() == false)
         Raylib.ClearBackground(Color.RED);
         Raylib.DrawText("GAME OVER ", 350, 300, 32, Color.BLACK);
         Raylib.DrawText("Press ENTER to play again", 300, 100, 32, Color.BLACK);
-        Raylib.DrawText("jag älskar chonnani!", 500, 200, 32, Color.BLACK);
     }
 
     Raylib.EndDrawing();
